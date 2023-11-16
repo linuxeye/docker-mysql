@@ -1,6 +1,7 @@
 # vi: ft=dockerfile
 FROM percona:5.7
 
+USER root
 RUN set -eux \
 	&& mkdir -p /etc/mysql/docker-default.d/ \
 	&& if [ -f /etc/my.cnf ]; then \
