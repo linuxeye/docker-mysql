@@ -1,7 +1,6 @@
 # vi: ft=dockerfile
 FROM percona:8.0
 
-USER root
 RUN set -eux \
 	&& mkdir -p /etc/mysql/docker-default.d/ \
 	&& if [ -f /etc/my.cnf ]; then \
@@ -22,6 +21,5 @@ RUN set -eux \
 	fi \
 	&& chmod +x "/docker-entrypoint.sh"
 
-USER mysql
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["mysqld"]
