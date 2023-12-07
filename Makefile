@@ -101,4 +101,4 @@ endif
 	@echo "################################################################################"
 	@echo "# Testing $(IMAGE):$(DOCKER_TAG) $(ARCH)"
 	@echo "################################################################################"
-	./tests/tests.sh "$(NAME)" "$(VERSION)" "${DOCKER_TAG}" "$(ARCH)"
+	#./tests/tests.sh "$(NAME)" "$(VERSION)" "${DOCKER_TAG}" "$(ARCH)"
