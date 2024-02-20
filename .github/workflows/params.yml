@@ -19,7 +19,7 @@ env:
       },
       {
         "NAME":    "mysql",
-        "VERSION": ["8.0", "8.2"],
+        "VERSION": ["8.0", "8.3"],
         "ARCH":    ["linux/amd64", "linux/arm64"]
       },
       {
