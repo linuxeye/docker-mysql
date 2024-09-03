@@ -2,6 +2,7 @@
 FROM mariadb:11.4
 
 RUN set -eux \
+	&& ln -s /usr/bin/mariadb /usr/bin/mysql \
 	&& mkdir -p /etc/mysql/docker-default.d/ \
 	&& if [ -f /etc/my.cnf ]; then \
 		echo '!'"includedir /etc/mysql/docker-default.d/" >> /etc/my.cnf; \
