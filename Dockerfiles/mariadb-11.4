@@ -20,4 +20,4 @@ RUN set -eux \
 	&& chmod +x "/docker-entrypoint.sh"
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["mysqld"]
+CMD ["mariadbd"]
