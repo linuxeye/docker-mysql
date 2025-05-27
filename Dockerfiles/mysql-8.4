@@ -13,7 +13,7 @@ RUN set -eux \
 		false; \
 	fi \
 	\
-# Allow native password handling for MySQL 8.0
+# Allow native password handling for MySQL 8.4
 	&& if [ -f /etc/my.cnf ]; then \
 		sed -i'' 's/^\[mysqld\]/[mysqld]\nmysql_native_password=on/g' /etc/my.cnf; \
 	elif [ -f /etc/mysql/my.cnf ]; then \
