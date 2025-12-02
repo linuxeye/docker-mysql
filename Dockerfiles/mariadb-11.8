@@ -3,6 +3,8 @@ FROM mariadb:11.8
 
 RUN set -eux \
 	&& ln -s /usr/bin/mariadb /usr/bin/mysql \
+	&& echo 'alias mysql="mariadb"' >> /root/.bashrc \
+	&& echo 'alias mysqldump="mariadb-dump"' >> /root/.bashrc \
 	&& mkdir -p /etc/mysql/docker-default.d/ \
 	&& if [ -f /etc/my.cnf ]; then \
 		echo '!'"includedir /etc/mysql/docker-default.d/" >> /etc/my.cnf; \
