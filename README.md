@@ -39,6 +39,7 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [`mariadb-11.4`][tag_mariadb-11.4]
 [`mariadb-11.8`][tag_mariadb-11.8]
 [`mariadb-12.1`][tag_mariadb-12.1]
+[`mariadb-12.2`][tag_mariadb-12.2]
 
 [`percona-5.5`][tag_percona-5.5]
 [`percona-5.6`][tag_percona-5.6]
@@ -73,6 +74,7 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [tag_mariadb-11.4]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-11.4
 [tag_mariadb-11.8]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-11.8
 [tag_mariadb-12.1]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-12.1
+[tag_mariadb-12.2]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-12.2
 
 ```bash
 docker pull bypanel/mysql:<docker-tag>

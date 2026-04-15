@@ -40,6 +40,7 @@ jobs:
           - { name: mariadb, version: "11.4", arches: ["linux/amd64", "linux/arm64"] }
           - { name: mariadb, version: "11.8", arches: ["linux/amd64", "linux/arm64"] }
           - { name: mariadb, version: "12.1", arches: ["linux/amd64", "linux/arm64"] }
+          - { name: mariadb, version: "12.2", arches: ["linux/amd64", "linux/arm64"] }
           
           # Percona
           - { name: percona, version: "5.5", arches: ["linux/amd64"] }
@@ -61,7 +62,7 @@ jobs:
       - name: Check if current version is the latest
         id: check-latest
         run: |
-          if [[ "${{ matrix.name }}" == "mariadb" && "${{ matrix.version }}" == "11.8" ]]; then
+          if [[ "${{ matrix.name }}" == "mariadb" && "${{ matrix.version }}" == "12.2" ]]; then
             echo "tags=${{ env.IMAGE_NAME }}:${{ matrix.name }}-${{ matrix.version }},${{ env.IMAGE_NAME }}:latest" >> $GITHUB_OUTPUT
           else
             echo "tags=${{ env.IMAGE_NAME }}:${{ matrix.name }}-${{ matrix.version }}" >> $GITHUB_OUTPUT
