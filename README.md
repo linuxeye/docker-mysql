@@ -1,6 +1,6 @@
 # MySQL Docker images
 
-[![](https://img.shields.io/badge/github-bypanel%2Fdocker--mysql-red.svg)](https://github.com/bypanel/docker-mysql "github.com/bypanel/docker-mysql")
+[![](https://img.shields.io/badge/github-bypanel%2Fdocker--mysql-red.svg)](https://github.com/linuxeye/docker-mysql "github.com/bypanel/docker-mysql")
 
 **Available Architectures:**  `amd64`, `arm64`
 
@@ -11,7 +11,7 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [Percona](https://hub.docker.com/_/percona) in order to use them for the
 **[bypanel](https://github.com/linuxeye/bypanel)** project.
 
-> ##### 🐱 GitHub: [bypanel/docker-mysql](https://github.com/bypanel/docker-mysql)
+> ##### 🐱 GitHub: [bypanel/docker-mysql](https://github.com/linuxeye/docker-mysql)
 
 ## 🐋 Available Docker tags
 
@@ -22,6 +22,7 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [`mysql-5.7`][tag_mysql-5.7]
 [`mysql-8.0`][tag_mysql-8.0]
 [`mysql-8.4`][tag_mysql-8.4]
+[`mysql-9.7`][tag_mysql-9.7]
 
 [`mariadb-5.5`][tag_mariadb-5.5]
 [`mariadb-10.0`][tag_mariadb-10.0]
@@ -40,41 +41,48 @@ The purpose of this project is to streamline and re-tag the official Docker imag
 [`mariadb-11.8`][tag_mariadb-11.8]
 [`mariadb-12.1`][tag_mariadb-12.1]
 [`mariadb-12.2`][tag_mariadb-12.2]
+[`mariadb-12.3`][tag_mariadb-12.3]
 
 [`percona-5.5`][tag_percona-5.5]
 [`percona-5.6`][tag_percona-5.6]
 [`percona-5.7`][tag_percona-5.7]
 [`percona-8.0`][tag_percona-8.0]
+[`percona-8.4`][tag_percona-8.4]
+[`percona-9.7`][tag_percona-9.7]
 
 
-[tag_mysql-5.5]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mysql-5.5
-[tag_mysql-5.6]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mysql-5.6
-[tag_mysql-5.7]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mysql-5.7
-[tag_mysql-8.0]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mysql-8.0
-[tag_mysql-8.4]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mysql-8.4
+[tag_mysql-5.5]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mysql-5.5
+[tag_mysql-5.6]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mysql-5.6
+[tag_mysql-5.7]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mysql-5.7
+[tag_mysql-8.0]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mysql-8.0
+[tag_mysql-8.4]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mysql-8.4
+[tag_mysql-9.7]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mysql-9.7
 
-[tag_percona-5.5]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/percona-5.5
-[tag_percona-5.6]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/percona-5.6
-[tag_percona-5.7]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/percona-5.7
-[tag_percona-8.0]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/percona-8.0
+[tag_percona-5.5]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/percona-5.5
+[tag_percona-5.6]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/percona-5.6
+[tag_percona-5.7]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/percona-5.7
+[tag_percona-8.0]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/percona-8.0
+[tag_percona-8.4]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/percona-8.4
+[tag_percona-9.7]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/percona-9.7
 
-[tag_mariadb-5.5]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-5.5
-[tag_mariadb-10.0]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.0
-[tag_mariadb-10.1]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.1
-[tag_mariadb-10.2]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.2
-[tag_mariadb-10.3]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.3
-[tag_mariadb-10.4]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.4
-[tag_mariadb-10.5]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.5
-[tag_mariadb-10.6]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.6
-[tag_mariadb-10.7]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.7
-[tag_mariadb-10.8]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.8
-[tag_mariadb-10.9]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.9
-[tag_mariadb-10.10]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.10
-[tag_mariadb-10.11]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-10.11
-[tag_mariadb-11.4]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-11.4
-[tag_mariadb-11.8]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-11.8
-[tag_mariadb-12.1]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-12.1
-[tag_mariadb-12.2]: https://github.com/bypanel/docker-mysql/blob/main/Dockerfiles/mariadb-12.2
+[tag_mariadb-5.5]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-5.5
+[tag_mariadb-10.0]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.0
+[tag_mariadb-10.1]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.1
+[tag_mariadb-10.2]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.2
+[tag_mariadb-10.3]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.3
+[tag_mariadb-10.4]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.4
+[tag_mariadb-10.5]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.5
+[tag_mariadb-10.6]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.6
+[tag_mariadb-10.7]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.7
+[tag_mariadb-10.8]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.8
+[tag_mariadb-10.9]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.9
+[tag_mariadb-10.10]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.10
+[tag_mariadb-10.11]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-10.11
+[tag_mariadb-11.4]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-11.4
+[tag_mariadb-11.8]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-11.8
+[tag_mariadb-12.1]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-12.1
+[tag_mariadb-12.2]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-12.2
+[tag_mariadb-12.3]: https://github.com/linuxeye/docker-mysql/blob/main/Dockerfiles/mariadb-12.3
 
 ```bash
 docker pull bypanel/mysql:<docker-tag>
@@ -180,18 +188,18 @@ Show some love for the following sister projects.
   <td></td>
  </tr>
  <tr>
-  <td><a href="https://github.com/bypanel/docker-php-fpm"><code>docker-php-fpm</code></a></td>
+  <td><a href="https://github.com/linuxeye/docker-php-fpm"><code>docker-php-fpm</code></a></td>
   <td><a href="https://hub.docker.com/r/bypanel/php-fpm"><code>bypanel/php-fpm</code></a></td>
  </tr>
  <tr>
-  <td><a href="https://github.com/bypanel/docker-mysql"><code>docker-mysql</code></a></td>
+  <td><a href="https://github.com/linuxeye/docker-mysql"><code>docker-mysql</code></a></td>
   <td><a href="https://hub.docker.com/r/bypanel/mysql"><code>bypanel/mysql</code></a></td>
  </tr>
  <tr>
   <td>
-   <a href="https://github.com/bypanel/docker-apache"><code>docker-apache</code></a><br/>
-   <a href="https://github.com/bypanel/docker-nginx"><code>docker-nginx</code></a><br/>
-   <a href="https://github.com/bypanel/docker-openresty"><code>docker-openresty</code></a>
+   <a href="https://github.com/linuxeye/docker-apache"><code>docker-apache</code></a><br/>
+   <a href="https://github.com/linuxeye/docker-nginx"><code>docker-nginx</code></a><br/>
+   <a href="https://github.com/linuxeye/docker-openresty"><code>docker-openresty</code></a>
   </td>
   <td>
    <a href="https://hub.docker.com/r/bypanel/apache"><code>bypanel/apache</code></a><br/>
